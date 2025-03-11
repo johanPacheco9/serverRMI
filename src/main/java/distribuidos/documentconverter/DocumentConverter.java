@@ -16,9 +16,9 @@ public class DocumentConverter {
         try {
             
            
-            Registry registry = LocateRegistry.createRegistry(8086); 
+            Registry registry = LocateRegistry.createRegistry(8087); 
             documentService service = new documentService() ;
-            Naming.rebind("rmi://192.168.1.6:8086/documentService", service);
+            Naming.rebind("rmi://192.168.1.6:8087/node1/documentService", service);
 
             System.out.println("Servidor RMI iniciado...");
         } catch (Exception e) {

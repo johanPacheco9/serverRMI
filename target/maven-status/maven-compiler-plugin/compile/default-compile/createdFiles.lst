@@ -1,3 +1,5 @@
 distribuidos\documentconverter\interfaces\IdocumentService.class
 distribuidos\documentconverter\DocumentConverter.class
+distribuidos\documentconverter\interfaces\Document.class
+document.class
 distribuidos\documentconverter\Services\documentService.class

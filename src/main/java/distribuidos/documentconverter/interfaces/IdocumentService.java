@@ -13,6 +13,8 @@ import java.util.List;
  * @author johan
  */
 public interface IdocumentService extends Remote {
-    List<byte[]> convertToPDF(List<String> docFilePaths)throws RemoteException;
+   List<byte[]> convertToPDF(List<Document> documents) throws RemoteException;
+    public List<byte[]> distributeConversion(List<Document> documents) throws RemoteException;
     boolean isNodeAvailable() throws RemoteException;
+     
 }
